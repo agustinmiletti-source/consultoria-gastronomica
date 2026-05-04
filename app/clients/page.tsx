@@ -4,6 +4,8 @@ import { AppShell } from "@/components/AppShell";
 import type { Client } from "@/lib/database.types";
 import { createClientServer } from "@/lib/supabase";
 
+export const dynamic = "force-dynamic";
+
 export default async function ClientsPage() {
   const supabase = await createClientServer();
   const { data: clients, error } = await supabase

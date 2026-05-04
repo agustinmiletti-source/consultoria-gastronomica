@@ -7,6 +7,8 @@ import type { Expense } from "@/lib/database.types";
 import { createClientServer } from "@/lib/supabase";
 import { createExpense, deleteExpense, updateExpense } from "../records-actions";
 
+export const dynamic = "force-dynamic";
+
 const expenseCategories = [
   "Materia prima",
   "Sueldos",

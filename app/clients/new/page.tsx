@@ -3,6 +3,8 @@ import { Button } from "@/components/Button";
 import { Field } from "@/components/Field";
 import { createClient } from "../actions";
 
+export const dynamic = "force-dynamic";
+
 export default function NewClientPage() {
   return (
     <AppShell>

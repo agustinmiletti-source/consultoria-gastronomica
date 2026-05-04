@@ -7,6 +7,8 @@ import type { Sale } from "@/lib/database.types";
 import { createClientServer } from "@/lib/supabase";
 import { createSale, deleteSale, updateSale } from "../records-actions";
 
+export const dynamic = "force-dynamic";
+
 export default async function SalesPage({
   params,
 }: {

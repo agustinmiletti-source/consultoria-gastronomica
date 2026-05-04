@@ -8,6 +8,8 @@ import type { Expense, Sale } from "@/lib/database.types";
 import { createClientServer } from "@/lib/supabase";
 import { currentMonth, formatCurrency, formatPercent, monthRange } from "@/lib/utils";
 
+export const dynamic = "force-dynamic";
+
 export default async function ClientDashboardPage({
   params,
   searchParams,

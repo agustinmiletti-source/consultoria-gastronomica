@@ -6,6 +6,8 @@ import { Field } from "@/components/Field";
 import { createClientServer } from "@/lib/supabase";
 import { deleteClient, updateClient } from "../../actions";
 
+export const dynamic = "force-dynamic";
+
 export default async function EditClientPage({
   params,
 }: {
